@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp --branchpatch=sdcomp-29491-629360
+"iil\startup_stm32l431xx.o"
+"iil\main.o"
+"iil\gpio.o"
+"iil\stm32l4xx_it.o"
+"iil\stm32l4xx_hal_msp.o"
+"iil\stm32l4xx_hal_tim.o"
+"iil\stm32l4xx_hal_tim_ex.o"
+"iil\stm32l4xx_hal.o"
+"iil\stm32l4xx_hal_i2c.o"
+"iil\stm32l4xx_hal_i2c_ex.o"
+"iil\stm32l4xx_hal_rcc.o"
+"iil\stm32l4xx_hal_rcc_ex.o"
+"iil\stm32l4xx_hal_flash.o"
+"iil\stm32l4xx_hal_flash_ex.o"
+"iil\stm32l4xx_hal_flash_ramfunc.o"
+"iil\stm32l4xx_hal_gpio.o"
+"iil\stm32l4xx_hal_dma.o"
+"iil\stm32l4xx_hal_dma_ex.o"
+"iil\stm32l4xx_hal_pwr.o"
+"iil\stm32l4xx_hal_pwr_ex.o"
+"iil\stm32l4xx_hal_cortex.o"
+"iil\stm32l4xx_hal_exti.o"
+"iil\system_stm32l4xx.o"
+--strict --scatter "IIL\IIL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "IIL.map" -o IIL\IIL.axf
